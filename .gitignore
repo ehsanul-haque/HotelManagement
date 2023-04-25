@@ -23,4 +23,9 @@
 hs_err_pid*
 replay_pid*
 src/class/*.class
-src/*.class
+/src/*.class
+bin/
+bin/classes/
+.settings
+.classpath
+.project

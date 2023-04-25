@@ -1,7 +1,6 @@
 package classes;
 
-import static javax.swing.JOptionPane.showMessageDialog;
-
+import javax.swing.JOptionPane;
 import java.awt.Color;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
@@ -13,7 +12,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-
 import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
 import javax.swing.JFrame;
@@ -21,11 +19,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-
 import java.awt.Font;
 import java.awt.Image;
-
 import javax.swing.JButton;
 import javax.swing.ImageIcon;
 
@@ -55,7 +50,7 @@ public class ForgetPass extends JFrame implements ActionListener {
 		JLabel forget = new JLabel("Reset Password");
 		forget.setForeground(Color.WHITE);
 		forget.setFont(new Font("Times New Roman", Font.PLAIN, 22));
-		forget.setBounds(355, 10, 147, 50);
+		forget.setBounds(363, 10, 147, 50);
 		contentPane.add(forget);
 
 		JLabel username = new JLabel("Username:");
@@ -116,7 +111,7 @@ public class ForgetPass extends JFrame implements ActionListener {
 		String user = "User Name : " + userField.getText();
 		String user1 = userField.getText();
 		boolean userEmpty = user1.isEmpty();
-		boolean yes = false;
+		boolean isFound = false;
 		int totalLines = 0;
 
 		if (e.getSource() == next) {
@@ -132,8 +127,8 @@ public class ForgetPass extends JFrame implements ActionListener {
 				}
 
 				if (userEmpty == true) {
-					showMessageDialog(null, "Enter User Name", "Error", JOptionPane.WARNING_MESSAGE);
-					yes = false;
+					JOptionPane.showMessageDialog(null, "Enter User Name", "Error", JOptionPane.WARNING_MESSAGE);
+					isFound = false;
 				} else {
 
 					for (int i = 0; i < totalLines; i++) {
@@ -141,23 +136,23 @@ public class ForgetPass extends JFrame implements ActionListener {
 						String line = Files.readAllLines(Paths.get(".\\files\\user_login.txt")).get(i);
 						if (line.equals(user)) {
 							deleteLine = i;
-							yes = true;
+							isFound = true;
 							break;
 
 						}
 					}
-					if (yes == true) {
+					if (isFound == true) {
 						this.setVisible(false);
-						// new ForgetPass2();
+						new ForgetPass2();
 					} else {
-						showMessageDialog(null, "Username not found", "Error", JOptionPane.WARNING_MESSAGE);
+						JOptionPane.showMessageDialog(null, "Username not found", "Error", JOptionPane.WARNING_MESSAGE);
 					}
 
 				}
 
 			} catch (Exception ex) {
 
-				showMessageDialog(null, "Username not found", "Error", JOptionPane.WARNING_MESSAGE);
+				JOptionPane.showMessageDialog(null, "Username not found", "Error", JOptionPane.WARNING_MESSAGE);
 
 			}
 
