@@ -189,6 +189,12 @@ public class Signup extends JFrame implements ActionListener {
 		signup = new JButton("Sign up");
 		signup.setBounds(380, 303, 85, 21);
 		contentPane.add(signup);
+		
+		exitButton.addActionListener(this);
+		signin.addActionListener(this);
+        EyeBtn.addActionListener(this);
+        EyeBtn2.addActionListener(this);
+        signup.addActionListener(this);
 
 		this.setVisible(true);
 	}
