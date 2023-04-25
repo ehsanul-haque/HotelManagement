@@ -156,7 +156,7 @@ public class ForgetPass2 extends JFrame implements ActionListener {
 								JOptionPane.WARNING_MESSAGE);
 					} else {
 						this.setVisible(false);
-						// new ForgetPass3();
+						new ForgetPass3();
 					}
 					readFile.close();
 
