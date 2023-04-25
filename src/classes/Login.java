@@ -128,16 +128,16 @@ public class Login extends JFrame implements ActionListener {
 		EyeBtn.setOpaque(false);
 		EyeBtn.setForeground(Color.DARK_GRAY);
 		EyeBtn.setBackground(Color.DARK_GRAY);
-		EyeBtn.setBounds(818, 287, 33, 19);
+		EyeBtn.setBounds(818, 276, 44, 30);
 		contentPane.add(EyeBtn);
 
 		forgot = new JButton("Forgotten Password ?");
 		forgot.setOpaque(false);
-		forgot.setForeground(Color.GRAY);
+		forgot.setForeground(Color.LIGHT_GRAY);
 		forgot.setFont(new Font("Dialog", Font.BOLD, 10));
 		forgot.setBorder(BorderFactory.createEmptyBorder());
-		forgot.setBackground(new Color(0, 0, 0, 0));
-		forgot.setBounds(729, 316, 120, 19);
+		forgot.setBackground(Color.DARK_GRAY);
+		forgot.setBounds(687, 311, 120, 19);
 		contentPane.add(forgot);
 
 		signup = new JButton("Don't have an account?");
@@ -352,7 +352,7 @@ public class Login extends JFrame implements ActionListener {
 			}
 		} else if (e.getSource() == forgot) {
 			this.setVisible(false);
-			// new ForgetPass();
+			new ForgetPass();
 		}
 
 	}
