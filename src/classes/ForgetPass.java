@@ -107,7 +107,6 @@ public class ForgetPass extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-
 		String user = "User Name : " + userField.getText();
 		String user1 = userField.getText();
 		boolean userEmpty = user1.isEmpty();
