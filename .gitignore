@@ -26,6 +26,6 @@ replay_pid*
 src/class/*.class
 /src/*.class
 bin/
-.settings
-.classpath
-.project
+/.settings/
+/.classpath
+/.project
