@@ -1,0 +1,72 @@
+
+Shop Details
+Theater2
+1600X1400
+G887
+72000
+Airport
+images/theater.png
+naimur
+
+Shop Details
+Beauty Parlour2
+650X450
+U678
+16000
+Bashundhara
+images/parlour.png
+naimur
+
+Shop Details
+MiniMart2
+1500X800
+X667
+14000
+Banani
+images/minimart.png
+naimur
+
+Shop Details
+Theater
+1800X1600
+D098
+52000
+Kuril
+images/theater.png
+sasa
+
+Shop Details
+Beauty Parlour
+950X650
+B105
+11000
+Shantinagar
+images/parlour.png
+sasa
+
+Shop Details
+Beauty Parlour
+950X650
+B105
+11000
+Shantinagar
+images/parlour.png
+Paul
+
+Shop Details
+MiniMart
+1200X700
+B003
+17000
+Badda
+images/minimart.png
+Paul
+
+Shop Details
+Theater
+1800X1600
+D098
+52000
+Kuril
+images/theater.png
+Paul
