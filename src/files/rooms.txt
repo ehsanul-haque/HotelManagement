@@ -1,0 +1,28 @@
+Rooms Details
+123
+AC
+Single
+1000
+Not Booked
+
+Rooms Details
+234
+Non-Ac
+Double
+2000
+Not Booked
+
+Rooms Details
+3425
+AC
+Single
+1000
+Not Booked
+
+Rooms Details
+214
+Non-Ac
+Double
+4000
+Not Booked
+
