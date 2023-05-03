@@ -177,7 +177,7 @@ public class DashBoard extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == logoutButton) {
             setVisible(false);
-            //new login
+            new Login();
         } else if (e.getSource() == chkinButton) {
             setVisible(false);
             new CheckIn();
@@ -186,7 +186,7 @@ public class DashBoard extends JFrame implements ActionListener {
             new CheckOut();
         } else if (e.getSource() == Manage_btn) {
             setVisible(false);
-            //new ManageRoom();
+            new ManageRoom();
         }
     }
 }
