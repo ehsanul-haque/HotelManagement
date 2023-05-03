@@ -1,11 +1,7 @@
-import myClasses.Login;
+import classes.*;
 
-
-public class Main {
+public class Start {
     public static void main(String[] args) {
-
         new Login();
-
-
     }
 }
